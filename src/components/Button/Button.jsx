@@ -1,13 +1,14 @@
 import React from 'react'
 import './button.css'
 
-const Button = ({icon, text, color, textColor, sizeWidth, fontSize}) => {
+const Button = ({icon, text, color, textColor, sizeWidth, fontSize, onClick}) => {
   return (
     <button
+    onClick={onClick}
     style={{backgroundColor: color,
             color: textColor,
             width: sizeWidth,
-            "font-size": fontSize}}
+            fontSize: fontSize}}
     >   {
             icon != null ? <img src={icon} /> : null
         }

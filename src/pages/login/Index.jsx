@@ -1,12 +1,17 @@
 import React from 'react'
 import Form from '../../components/Form/Form'
+import { LoginProvider } from '../../Contexts/LoginContext'
 import './Index.css'
 
+
 const Login = () => {
+
   return (
-    <div className='login-page'>
-       <Form whatsAbout="Login" />
-    </div>
+    <LoginProvider>
+      <div className='login-page'>
+        <Form whatsAbout="Minha Empresa" />
+      </div>
+    </LoginProvider>
   )
 }
 
