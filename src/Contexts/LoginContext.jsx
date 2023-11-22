@@ -2,7 +2,7 @@
 import React, { createContext, useState } from 'react';
 
 
-export const LoginContext = createContext(null);
+export const LoginContext = createContext();
 
 export const LoginProvider = ({ children }) => {
   const [email, setEmail] = useState('');

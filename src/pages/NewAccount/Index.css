@@ -9,17 +9,13 @@ body{
     background-size: cover;
 }
 
-.login-page {
+.signup-page {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--var--color-primary);
     width: 100%;
     height: 100vh;
-}
-
-:root{
-    --var--color-primary: #4e4a60;
 }
 
 .background-form{
